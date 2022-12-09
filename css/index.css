@@ -1,3 +1,43 @@
-h1:hover {
-color: blue;
+.jumbotron-fluid {
+    margin: 0;
+    height: 500px;
+}
+.container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0;
+}
+.aboutMe {
+    display: flex;
+    background-color: azure;
+    height: 300px;
+    margin-top: 5px;
+    justify-content: center;
+}
+.aboutMeTitle {
+    font-family: 'Times New Roman', Times, serif;
+}
+h2 {
+    justify-content: center;
+}
+.section1 {
+    background-color: green;
+    height: 400px;
+}
+.section2 {
+    background-color: bisque;
+    height: 500px;
+}
+.section3 {
+    background-color: blanchedalmond;
+    height: 200px;
+}
+.section4 {
+    background-color: coral;
+    height: 300px;
+}
+
+.portfolio {
+    display: grid;
 }
