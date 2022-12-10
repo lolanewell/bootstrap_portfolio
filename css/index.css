@@ -1,28 +1,90 @@
-.jumbotron-fluid {
-    margin: 0;
-    height: 500px;
+@font-face {
+    font-family: 'ahsingRegular';
+    src: url(../assets/fonts/Ahsing-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
 }
-.container {
+@font-face {
+    font-family: 'sportingGrotesque';
+    src: url(../assets/fonts/SportingGrotesque-Regular.otf);
+}
+@font-face {
+    font-family: 'cyrene';
+    src: url(../assets/fonts/Cyrene-Regular.otf);
+}
+
+.nav {
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    background: transparent;
 }
+
+.nav-link {
+    color:whitesmoke;
+}
+.navLeft {
+    display: flex;
+    float: left;
+    font-family:'sportingGrotesque';
+    font-weight: 1000;
+    margin-left: 40px;
+}
+.navRight {
+    display: flex;
+    float: right;
+    font-family:'sportingGrotesque';
+    font-weight: 1000;
+    margin-right: 40px;
+}
+.navTitle {
+   font-family: 'ahsingRegular';
+   color: whitesmoke;
+   font-size: 3rem;
+}
+
+.jumbotron-fluid {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+    height: 500px;
+    background: url(../assets/images/jumbotron2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color:whitesmoke;
+}
+.lead {
+    color: #2E878A;
+}
+h1 {
+    font-family:'cyrene';
+    font-size: 8rem !important;
+    mix-blend-mode:exclusion;
+}
+
 .aboutMe {
     display: flex;
     background-color: azure;
     height: 300px;
-    margin-top: 5px;
     justify-content: center;
 }
 .aboutMeTitle {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'ahsingregular';
+}
+.lead {
+    font-family: 'sportingGrotesque';
 }
 h2 {
     justify-content: center;
 }
 .section1 {
-    background-color: green;
+    background-color: peachpuff;
     height: 400px;
 }
 .section2 {
