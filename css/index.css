@@ -22,10 +22,12 @@
     width: 100%;
     margin: auto;
     background: transparent;
+    z-index: 1;
+    mix-blend-mode:exclusion;
 }
 
 .nav-link {
-    color:whitesmoke;
+    color:white;
 }
 .navLeft {
     display: flex;
@@ -33,6 +35,7 @@
     font-family:'sportingGrotesque';
     font-weight: 1000;
     margin-left: 40px;
+    
 }
 .navRight {
     display: flex;
@@ -43,7 +46,7 @@
 }
 .navTitle {
    font-family: 'ahsingRegular';
-   color: whitesmoke;
+   color: white;
    font-size: 3rem;
 }
 
@@ -54,28 +57,17 @@
     padding: 0;
     height: 500px;
     background: url(../assets/images/jumbotron2.jpg);
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     text-align: center;
     color:whitesmoke;
 }
 .lead {
-    color: #2E878A;
+    color: palevioletred;
 }
 h1 {
     font-family:'cyrene';
     font-size: 8rem !important;
-    mix-blend-mode:exclusion;
-}
-
-.aboutMe {
-    display: flex;
-    background-color: azure;
-    height: 300px;
-    justify-content: center;
-}
-.aboutMeTitle {
-    font-family: 'ahsingregular';
 }
 .lead {
     font-family: 'sportingGrotesque';
@@ -83,23 +75,84 @@ h1 {
 h2 {
     justify-content: center;
 }
-.section1 {
-    background-color: peachpuff;
-    height: 400px;
+.portfolio {
+    background-color: whitesmoke;
 }
-.section2 {
-    background-color: bisque;
-    height: 500px;
-}
-.section3 {
-    background-color: blanchedalmond;
-    height: 200px;
-}
-.section4 {
-    background-color: coral;
-    height: 300px;
+.portfolioTitle {
+    background-image: url(/assets/images/jumbotron2.jpg);
+    background-clip: text;
+    height: 50px;
+    padding-top: 7px;
+    color: transparent;
+    background-size:cover;
+    background-repeat: no-repeat;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: clip;
 }
 
-.portfolio {
-    display: grid;
+.portfolioCards {
+    background-color: whitesmoke;
+    background-size: cover;
+    display: flex;
+    padding: 0;
+    font-family: 'sportingGrotesque';
+    background-color: whitesmoke;
+}
+
+.card-title {
+    color:whitesmoke;
+}
+.card-text {
+    color:whitesmoke;
+}
+.card {
+    padding: 0;
+    border: none;
+    border-radius: none !important;
+}
+
+.mySkillsTitle {
+    background-image: url(/assets/images/jumbotron2.jpg);
+    background-clip: text;
+    height: 50px;
+    padding-top: 7px;
+    color: transparent;
+    background-size:cover;
+    background-repeat: no-repeat;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: clip;
+}
+.mySkillsSection {
+    height: 300px;
+    background-color: antiquewhite;
+}
+.myWork {
+    font-family:'sportingGrotesque';
+}
+
+.mySkillsTitle {
+    font-family:'sportingGrotesque';
+}
+.body {
+    background-color: bisque;
+}
+.aboutMeTitle {
+    background-image: url(/assets/images/jumbotron2.jpg);
+    background-clip: text;
+    height: 50px;
+    padding-top: 7px;
+    color: transparent;
+    background-size:cover;
+    background-repeat: no-repeat;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: clip;
+    font-family: 'sportingGrotesque';
+}
+
+.aboutMeSection {
+    height: 300px;
+    background-color: antiquewhite;
 }
