@@ -12,7 +12,9 @@
     font-family: 'cyrene';
     src: url(../assets/fonts/Cyrene-Regular.otf);
 }
-
+body {
+    background-color: honeydew;
+}
 .nav {
     display: flex;
     justify-content: space-between;
@@ -23,11 +25,11 @@
     margin: auto;
     background: transparent;
     z-index: 1;
-    mix-blend-mode:exclusion;
+    mix-blend-mode: exclusion;
 }
 
 .nav-link {
-    color:white;
+    color: coral;
 }
 .navLeft {
     display: flex;
@@ -46,7 +48,7 @@
 }
 .navTitle {
    font-family: 'ahsingRegular';
-   color: white;
+   color:coral;
    font-size: 3rem;
 }
 
@@ -60,10 +62,10 @@
     background-size:cover;
     background-repeat: no-repeat;
     text-align: center;
-    color:whitesmoke;
+    color:honeydew;
 }
 .lead {
-    color: palevioletred;
+    color: honeydew;
 }
 h1 {
     font-family:'cyrene';
@@ -76,10 +78,10 @@ h2 {
     justify-content: center;
 }
 .portfolio {
-    background-color: whitesmoke;
+    background-color:honeydew;
 }
 .portfolioTitle {
-    background-image: url(/assets/images/jumbotron2.jpg);
+    background-image: url(/assets/images/title.jpg);
     background-clip: text;
     height: 50px;
     padding-top: 7px;
@@ -89,31 +91,54 @@ h2 {
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: clip;
+    display: flex;
+    justify-content: center;
 }
 
 .portfolioCards {
-    background-color: whitesmoke;
+    background-color:honeydew;
     background-size: cover;
     display: flex;
     padding: 0;
     font-family: 'sportingGrotesque';
-    background-color: whitesmoke;
+    padding-left: 5px;
+    padding-right: 5px;  
 }
 
 .card-title {
-    color:whitesmoke;
+    color:honeydew;
+    mix-blend-mode: luminosity;
 }
 .card-text {
-    color:whitesmoke;
+    color:honeydew;
+    font-size: auto;
+    display: flex;
+    justify-content: flex-end;
+
+
 }
 .card {
-    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;    
     border: none;
-    border-radius: none !important;
 }
 
+.cardImage {
+    width:100%;
+    max-height:100%;
+    object-fit:contain;
+    overflow: hidden;
+    border-color: honeydew;
+    border-radius: 1%;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 10px;
+}
+.mySkills {
+    background-color: honeydew;
+}
 .mySkillsTitle {
-    background-image: url(/assets/images/jumbotron2.jpg);
+    background-image: url(/assets/images/title.jpg);
     background-clip: text;
     height: 50px;
     padding-top: 7px;
@@ -123,23 +148,34 @@ h2 {
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: clip;
+    display: flex;
+    justify-content: center;
+    font-family:'sportingGrotesque';
 }
 .mySkillsSection {
-    height: 300px;
-    background-color: antiquewhite;
+    height: 50px;
+    background-image: url(/assets/images/gradient2landscape.jpg);
+    background-size: cover;
+    font-family:'sportingGrotesque';
+    color: honeydew;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
 }
 .myWork {
     font-family:'sportingGrotesque';
 }
-
-.mySkillsTitle {
-    font-family:'sportingGrotesque';
-}
+    
 .body {
-    background-color: bisque;
+    background-color:honeydew;
+}
+
+.aboutMe {
+    background-color: honeydew;
 }
 .aboutMeTitle {
-    background-image: url(/assets/images/jumbotron2.jpg);
+    background-image: url(/assets/images/title.jpg);
     background-clip: text;
     height: 50px;
     padding-top: 7px;
@@ -150,9 +186,84 @@ h2 {
     overflow: hidden;
     text-overflow: clip;
     font-family: 'sportingGrotesque';
+    display: flex;
+    justify-content: center;
+}
+.aboutMeSection {
+    min-height: 300px;
+    background-image: url(/assets/images/gradient3landscape.jpg);
+    display: flex;
+    background-size: cover;
+    text-align: justify;
+    justify-content: flex-start;
+}
+.aboutMeText {
+    font-family:'sportingGrotesque' ;
+    margin-top: 20px;
+    color: honeydew;
+    margin-right: 20px;
+}
+.avatar {
+    float: left;
+    border-color:honeydew; 
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1%;
+    margin: 20px;
+    max-height: 300px;
+}
+.contactTitle {
+    background-image: url(/assets/images/title.jpg);
+    background-clip: text;
+    height: 50px;
+    padding-top: 7px;
+    color: transparent;
+    background-size:cover;
+    background-repeat: no-repeat;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: clip;
+    font-family: 'sportingGrotesque';
+    display: flex;
+    justify-content: center;
+}
+.contactSection {
+    height: 100px;
+    background-image: url(/assets/images/gradient1landscape.jpg);
+    background-size: cover;
+    font-family:'sportingGrotesque';
+    color: honeydew;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    gap: 20px;
+}
+.btn {
+    color: honeydew;
+    border-color: honeydew;
 }
 
-.aboutMeSection {
-    height: 300px;
-    background-color: antiquewhite;
+footer {
+    background-image: url(/assets/images/title.jpg);
+    background-clip: text;
+    height: 50px;
+    padding-top: 7px;
+    color: transparent;
+    background-size:cover;
+    background-repeat: no-repeat;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: clip;
+    font-family: 'sportingGrotesque';
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.name {
+    font-family: 'ahsingRegular';
+    padding-left: 7px;
+    font-size: 19px;
+}
+@media screen {
+    
 }
