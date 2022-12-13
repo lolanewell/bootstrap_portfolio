@@ -26,11 +26,15 @@ body {
     background: transparent;
     z-index: 1;
     mix-blend-mode: exclusion;
+    flex-wrap: nowrap;
 }
-
 .nav-link {
     color: coral;
 }
+.nav-item a:hover {
+    color: honeydew;
+} 
+
 .navLeft {
     display: flex;
     float: left;
@@ -96,13 +100,17 @@ h2 {
 }
 
 .portfolioCards {
-    background-color:honeydew;
-    background-size: cover;
     display: flex;
     padding: 0;
     font-family: 'sportingGrotesque';
     padding-left: 5px;
     padding-right: 5px;  
+    justify-content: center;
+    background-color: honeydew;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .card-title {
@@ -115,14 +123,12 @@ h2 {
     display: flex;
     justify-content: flex-end;
 
-
 }
 .card {
-    padding-left: 5px;
-    padding-right: 5px;    
+    padding: 3px;
     border: none;
+    background-color: honeydew;
 }
-
 .cardImage {
     width:100%;
     max-height:100%;
@@ -134,6 +140,16 @@ h2 {
     border-width: 1px;
     margin-bottom: 10px;
 }
+.portfolioCards a:link, a:visited, a:active {
+    color: honeydew;
+}
+
+.portfolioCards a:hover {
+    color: coral;
+    text-decoration:none;
+    mix-blend-mode:exclusion;
+}
+
 .mySkills {
     background-color: honeydew;
 }
@@ -202,6 +218,7 @@ h2 {
     margin-top: 20px;
     color: honeydew;
     margin-right: 20px;
+    float:left;
 }
 .avatar {
     float: left;
@@ -238,6 +255,14 @@ h2 {
     padding: 30px;
     gap: 20px;
 }
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.empty2 {
+    margin-left: 30px;
+}
 .btn {
     color: honeydew;
     border-color: honeydew;
@@ -264,6 +289,19 @@ footer {
     padding-left: 7px;
     font-size: 19px;
 }
-@media screen {
-    
+@media only screen and (max-width:960px) {
+    .navLeft {
+        margin-left: 20px;
+    }
+    .navRight {
+        margin-right: 20px;
+}
+.navTitle {
+    font-family: 'ahsingRegular';
+    color:coral;
+    font-size: 1.75rem;
+ }
+.nav {
+    font-size: 10px;
+}
 }
